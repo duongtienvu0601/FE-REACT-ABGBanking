@@ -1,0 +1,346 @@
+/* Typography */
+.h1 {
+    @apply text-4xl font-extrabold leading-tight tracking-tighter;
+}
+
+.h2 {
+    @apply text-3xl font-extrabold leading-tight tracking-tighter;
+}
+
+.h3 {
+    @apply text-3xl font-bold leading-tight;
+}
+
+.h4 {
+    @apply text-2xl font-bold leading-snug tracking-tight;
+}
+nav ul li a {
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.flex {
+    font-family: "Open Sans", sans-serif;
+}
+
+.text-gray-900 {
+    color: #333;
+}
+
+.text-purple-600 {
+    color: #7048e8;
+}
+
+.font-semibold {
+    font-weight: 600;
+}
+
+.mb-4 {
+    margin-bottom: 1rem;
+}
+
+.mt-4 {
+    margin-top: 1rem;
+}
+
+.text-xl {
+    font-size: 1.25rem;
+}
+
+.text-3xl {
+    font-size: 2rem;
+}
+
+.text-4xl {
+    font-size: 2.5rem;
+}
+
+.shadow-md:hover {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    transform: translateY(-2px);
+    transition: all 0.2s ease-in-out;
+}
+.bg-gradient {
+    background: linear-gradient(45deg, #7048e8, #3f51b5, #2196f3, #00bcd4, #4caf50, #f44336, #ff9800, #ffc107, #ffeb3b);
+    background-size: 1800% 1800%;
+    animation: gradient 20s ease infinite;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+}
+
+.form-group label {
+    margin-bottom: 0.5rem;
+}
+
+.form-group input {
+    margin-bottom: 0.5rem;
+}
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+/**/
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+    background-color: #f7fafc;
+}
+th,
+td {
+    border: 1px solid #ccc;
+    padding: 1px;
+    color: black;
+    text-align: left;
+}
+
+th {
+    font-weight: bold;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.pagination li {
+    list-style-type: none;
+    margin: 0 10px;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    padding: 5px 10px;
+}
+
+.pagination li:hover {
+    background-color: #f5f5f5;
+}
+
+.active {
+    background-color: #ccc;
+    color: white;
+    cursor: default;
+}
+/* Add some styles to make the table look better */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0 auto;
+    border-spacing: 0;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+th,
+table {
+    border-spacing: 0;
+    border-collapse: collapse;
+    width: 40;
+}
+td {
+    padding: 12px 15px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+th {
+    background-color: #333;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 1px;
+}
+tr {
+    height: 50px;
+    width: 300px;
+}
+tr:nth-child(even) {
+    background-color: #f5f5f5;
+}
+
+tr:hover {
+    background-color: #f2f2f2;
+    cursor: pointer;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.pagination li {
+    list-style: none;
+    margin-right: 10px;
+    border: 1px solid #ddd;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.pagination li.active {
+    background-color: #333;
+    color: #fff;
+}
+
+.pagination li:hover:not(.active) {
+    background-color: #ddd;
+}
+/* Add styles for a button to continue */
+.continue-btn {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.continue-btn:hover {
+    background-color: #555;
+}
+.continue-btn:active {
+    background-color: #777;
+}
+
+.flex-nowrap {
+    flex-wrap: nowrap;
+}
+.form-control {
+    display: block;
+    width: 100%;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+.form-group {
+    margin-bottom: 1rem;
+}
+.input-group {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    width: 100%;
+}
+.input-group > .form-control {
+    position: relative;
+    flex: 1 1 auto;
+    width: 1%;
+    margin-bottom: 0;
+}
+.input-group > .form-control:focus {
+    z-index: 3;
+}
+.input-group > .form-control:not(:last-child) {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+.input-group > .form-control:not(:first-child) {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+.input-group > .form-control:not(:last-child):not(.dropdown-toggle),
+.input-group > .form-control:not(:first-child) {
+    border-right: 0;
+    border-left: 0;
+}
+/**/
+
+@screen md {
+    .h1 {
+        @apply text-5xl;
+    }
+
+    .h2 {
+        @apply text-4xl;
+    }
+}
+.header-border {
+    border-bottom: 1px solid white;
+}
+img.logo {
+    border: 2px solid white;
+}
+#g_id_onload {
+    height: auto;
+    z-index: 90;
+    background-color: blue;
+}
+.black-text {
+    color: black;
+}
+
+form input {
+    color: black;
+}
+/* Buttons */
+.btn,
+.btn-sm {
+    @apply font-medium inline-flex items-center justify-center border border-transparent rounded-sm leading-snug transition duration-150 ease-in-out;
+}
+
+.btn {
+    @apply px-8 py-3;
+}
+
+.btn-sm {
+    @apply px-4 py-2;
+}
+
+/* Forms */
+.form-input,
+.form-textarea,
+.form-multiselect,
+.form-select,
+.form-checkbox,
+.form-radio {
+    @apply bg-transparent border border-gray-700 focus:border-gray-500;
+}
+
+.form-input,
+.form-textarea,
+.form-multiselect,
+.form-select,
+.form-checkbox {
+    @apply rounded-sm;
+}
+
+.form-input,
+.form-textarea,
+.form-multiselect,
+.form-select {
+    @apply py-3 px-4;
+}
+.form-input,
+.form-textarea {
+    @apply placeholder-gray-500;
+}
+
+.form-select {
+    @apply pr-10;
+}
+
+.form-checkbox,
+.form-radio {
+    @apply text-purple-600;
+}
